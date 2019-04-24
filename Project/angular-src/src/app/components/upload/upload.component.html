@@ -1,0 +1,19 @@
+<link href='https://fonts.googleapis.com/css?family=Medula One' rel='stylesheet'>
+
+<body>
+<div style="text-align: center;">
+  <div class="transbox" style="display: inline-block;">
+    <h1 class="title"> Imgur Upload </h1>
+    <form>
+      <div class="form-group">
+      <input type="file" class="form-control-file" (change)="onFileSelected($event)">
+      <button class="btn btn-outline-dark" (click)="uploadImage()">Upload Image</button>
+      <button class="btn btn-outline-dark" (click)="deleteImage()">Delete Image</button>
+      </div>
+    </form>
+    <br>
+    <div id="confirmation" style="display: none;"></div>
+  </div>
+</div>
+</body>
+

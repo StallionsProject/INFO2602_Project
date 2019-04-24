@@ -1,0 +1,74 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="middle">
+        <div id="login">
+
+          <form class="form-signin" (submit)="onLoginSubmit()">
+            <fieldset class="clearfix">
+
+            <div class="form-group">
+              <label style="color: rgb(255,255,255);" for="Username">Username</label>
+              <p>
+                <span class="fa fa-user"></span>
+                <input type="text" class="form-control" placeholder="Enter Username" [(ngModel)]="username" name="username">
+              </p>
+            </div>
+            <div class="form-group">
+              <label style="color: rgb(255,255,255);" for="Password">Password</label>
+              <p>
+                <span class="fa fa-lock"></span>
+              <input type="password" class="form-control" placeholder=" Enter Password" [(ngModel)]="password" name="password">
+              </p>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+              <span style="width:50%; text-align:right;  display: inline-block;">
+                <input class="btn btn-lg btn-primary" type="submit" value="Login">
+              </span>
+            </fieldset>
+            <div class="clearfix"></div>
+          </form>
+          <div class="clearfix"></div>
+
+        </div>
+        <div class="logo">
+          <img src="https://www.imgur.com/DY2jPok.png" style="width: 120px;">
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!--=========================================================================================================-->
+<!--<h2 class="page-header" >Login</h2>-->
+<!--<form class="form-signin" (submit)="onLoginSubmit()">-->
+        <!--<div class="form-group">-->
+          <!--<label for="Username">Username</label>-->
+          <!--<input type="text" class="form-control" placeholder="Enter Username" [(ngModel)]="username" name="username">-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+        <!--<label for="Password">Password</label>-->
+        <!--<input type="password" class="form-control" placeholder=" Enter Password" [(ngModel)]="password" name="password">-->
+        <!--</div>-->
+        <!--<div class="checkbox">-->
+          <!--<label>-->
+            <!--<input type="checkbox" value="remember-me"> Remember me-->
+          <!--</label>-->
+        <!--</div>-->
+        <!--<input class="btn btn-lg btn-primary" type="submit" value="Login">-->
+<!--</form>-->

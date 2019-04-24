@@ -1,0 +1,13 @@
+body {
+  background-image: url('http://eskipaper.com/images/night-3.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+h1 {
+  font-family: 'Abel';
+  color: white;
+}

@@ -1,0 +1,12 @@
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+<body>
+<section class="container">
+  <h1 class="p-4 d-flex justify-content-center">Meme PlayList</h1>
+  <div class="row d-flex justify-content-center"
+       *ngFor="let post of playlistItems">
+    <div style="margin: 20px 10px 20px 10px;">
+      <iframe width="640" height="360" [src]="getEmbedUrl(post)" frameborder="0"  allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+</body>

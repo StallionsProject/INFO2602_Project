@@ -1,0 +1,29 @@
+<div id="divBody" class="parallax">
+  <div style="margin-top: 10%;" *ngIf="user">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/3b/9f/22/3b9f22d40b55b92596f5cf7136029662.jpg" alt="John" style="width:100%;">
+      <h1>{{user.name}}</h1>
+      <p class="title">Username : {{user.username}}</p>
+      <p class="title">About Me : {{user.description}}</p>
+      <p>Email : {{user.email}}</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </div>
+      <a href="#"><button>Contact</button></a>
+      <button (click)="showForm()">Edit About Me</button>
+      <form id="descriptionForm" style="display: none" (submit)="onEditDescription()">
+        <div class="form-group">
+          <input type="text" class="form-control" name="description" [(ngModel)]="description">
+          <input class="form-control" type="submit" value="Submit">
+        </div>
+      </form>
+      <button (click)="promptUser()">Delete Account</button>
+    </div>
+  </div>
+</div>
+
+

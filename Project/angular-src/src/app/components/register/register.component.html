@@ -1,0 +1,92 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+
+
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="middle">
+        <div id="login">
+
+          <form (submit)="onRegisterSubmit()" >
+            <fieldset class="clearfix">
+            <div class="form-group">
+              <label style="color: rgb(255,255,255);" for="name">Name</label>
+              <p><span class="fa fa-user"></span>
+                <input type="text" [(ngModel)]="name" name="name" class="form-control" id="name" placeholder="Enter Name">
+              </p>
+            </div>
+            <div class="form-group">
+              <label style="color: rgb(255,255,255);" for="username">Username</label>
+              <p><span class="fa fa-user"></span>
+                <input type="text" [(ngModel)]="username" name="username" class="form-control" id="username" placeholder="Enter Username">
+              </p>
+            </div>
+            <div class="form-group">
+              <label style="color: rgb(255,255,255);" for="email">Email</label>
+
+                <input type="email" [(ngModel)]="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+
+              <small style="color: rgb(255,255,255);" id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label style="color: rgb(255,255,255);" for="password">Password</label>
+              <p><span class="fa fa-lock"></span>
+                <input type="password" [(ngModel)]="password" name="password" class="form-control" id="password" placeholder=" Enter Password">
+              </p>
+            </div>
+              <span style="width:10%; text-align:right;  display: inline-block;">
+                <input style="padding-left: 100px; padding-right: 100px;" type="submit" class="btn btn-primary" value="Submit">
+              </span>
+            </fieldset>
+          </form>
+
+          <div class="clearfix"></div>
+
+        </div>
+        <div class="logo">
+          <img src="https://www.imgur.com/DY2jPok.png" style="width: 120px;">
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!--=====================================================================================================-->
+<!--<div>-->
+<!--<h2 class="page-header">Register</h2>-->
+
+<!--</div>-->
+<!--=============================================================================================-->
+
+
+
+<!--<div>-->
+<!--<h2 class="page-header">Register</h2>-->
+<!--<form (submit)="onRegisterSubmit()" >-->
+  <!--<div class="form-group">-->
+    <!--<label for="name">Name</label>-->
+    <!--<input type="text" [(ngModel)]="name" name="name" class="form-control" id="name" placeholder="Enter Name">-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+    <!--<label for="username">Username</label>-->
+    <!--<input type="text" [(ngModel)]="username" name="username" class="form-control" id="username" placeholder="Enter Username">-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+    <!--<label for="email">Email</label>-->
+    <!--<input type="email" [(ngModel)]="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">-->
+    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+    <!--<label for="password">Password</label>-->
+    <!--<input type="password" [(ngModel)]="password" name="password" class="form-control" id="password" placeholder=" Enter Password">-->
+  <!--</div>-->
+  <!--<input type="submit" class="btn btn-primary" value="Submit">-->
+<!--</form>-->
+<!--</div>-->

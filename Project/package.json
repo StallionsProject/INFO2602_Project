@@ -1,0 +1,23 @@
+{
+  "name": "stallions-project",
+  "version": "1.0.0",
+  "description": "Stallion Imgur Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "nodemon": "^1.18.11",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "Bhavesh Digamber",
+  "license": "ISC"
+}
